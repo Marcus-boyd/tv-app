@@ -24,6 +24,13 @@ class TvShowComponent extends Component {
   }
 
   render() {
-    return ()
+    return (
+      <div>
+        <img className='showimage' src={this.state.image.original}></img>
+        <h3>{this.state.name}</h3>
+        <span>{this.state.premiered}</span>
+        <p>{this.state.summary}</p>
+      </div>
+    )
   }
 }
