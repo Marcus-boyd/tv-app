@@ -6,4 +6,14 @@ class Index extends Component {
       this.state = {}
     }
   }
+
+  render() {
+    return(
+      <div>
+        Hello world
+      </div>
+    )
+  }
 }
+
+export default Index;

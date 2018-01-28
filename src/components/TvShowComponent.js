@@ -4,7 +4,7 @@ class TvShowComponent extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      shows: {}
+      show: {}
     }
     this.fetchShow = this.fetchShow.bind(this)
   }
@@ -14,7 +14,7 @@ class TvShowComponent extends Component {
     .then(response => response.json())
     .then(data => {
       this.setState({
-        shows: data
+        show: data
       })
     })
   }
@@ -34,3 +34,5 @@ class TvShowComponent extends Component {
     )
   }
 }
+
+export default TvShowComponent
